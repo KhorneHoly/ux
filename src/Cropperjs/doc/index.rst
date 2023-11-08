@@ -104,7 +104,7 @@ custom Stimulus controller:
 
         disconnect() {
             // You should always remove listeners when the controller is disconnected to avoid side effects
-            this.element.removeEventListener('cropperjs:pre-connect', this._onConnect);
+            this.element.removeEventListener('cropperjs:pre-connect', this._onPreConnect);
             this.element.removeEventListener('cropperjs:connect', this._onConnect);
         }
 
